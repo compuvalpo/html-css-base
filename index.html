@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="compuvalpo@gmail.com">
+    <meta name = "description" content = "HTML CSS Base para pruebas y ejemplos." />
+    <title>HTML CSS Base para pruebas y ejemplos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.7.1.min.js">></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/all.min.css" />
+</head>
+<body>
+	<div class="container mb-4">
+
+		<main id="content">
+			<h1 class="title mb-4">HTML CSS Base para pruebas y ejemplos</h1>
+
+			<div class="container-fluid">
+				<div class="col-lg-10 col-md-10 col-sm-10 col-sm-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="text-end">
+								<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Modal" data-titulo="Crear"><i class="fa-solid fa-circle-plus"></i> Agregar </button>
+							</div>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title text-primary mb-3">Lista</h5>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+
+	</div>
+	
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalTitle"></h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form id="formTaskModal">
+					<div class="mb-3">
+						<label for="inputNombre" class="col-form-label">Nombre:</label>
+						<input type="text" class="form-control" id="inputNombre">
+					</div>
+					<div class="mb-3">
+						<label for="inputDescripcion" class="col-form-label">Descripcion:</label>
+						<textarea class="form-control" id="inputDescripcion"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" onclick="crear();">Aceptar</button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
